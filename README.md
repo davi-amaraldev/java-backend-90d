@@ -113,13 +113,13 @@ Examples:
 
 ```text
 labs/
-├── object-references/
-├── equals-hashcode/
-├── collections/
-├── generics/
-├── jdbc/
-└── concurrency/
+├── day01/
+│   └── src/BankApp.java
+└── day02/
+    └── src/
 ```
+
+Use `labs/dayNN/` for focused daily experiments. The example above shows Day 1 and the planned Day 2 layout. Create directories only when work begins; not every day needs a new lab.
 
 Labs exist to learn a concept. They are not portfolio projects.
 
@@ -131,7 +131,7 @@ Concepts learned in the labs should eventually be applied here when they make se
 
 ### `docs/journal/`
 
-Daily learning records.
+Daily learning records, named `day01.md`, `day02.md`, and so on.
 
 A journal entry should explain:
 
@@ -148,7 +148,7 @@ Weekly engineering reviews and larger assessments.
 
 ## Daily Study Loop
 
-Target session: around **2 hours**.
+Target session: around **2 hours and 20 minutes**. Actual study time is recorded in each journal entry.
 
 ```text
 10 min  recall yesterday without notes
@@ -185,7 +185,7 @@ See [RULES.md](RULES.md) for the complete challenge rules.
 The stack will be introduced progressively.
 
 ```text
-Java 25 LTS
+Java 17 LTS
 Maven
 JUnit 5
 Mockito
@@ -248,11 +248,22 @@ See [RULES.md](RULES.md).
 
 ## Progress
 
-**Status:** Day 0 — Repository setup
+**Status:** Day 1 completed — Java fundamentals with BankApp.
 
-The technical challenge begins on **Day 1**.
+**Study date:** 2026-09-14  
+**Time spent:** 40 minutes  
+**JDK:** 17
 
-Progress and daily notes will be tracked through commits and `docs/journal/`.
+Day 1 covered class structure, `main`, `Scanner`, methods, parameters and return values, `static`, conditionals, `do...while`, validation, and basic exception handling.
+
+- [Day 1 source code](labs/day01/src/BankApp.java)
+- [Day 1 journal](docs/journal/day01.md)
+
+The introductory implementation is complete. Manual verification results have not yet been recorded. Known limitations include menu-only business validation, unhandled non-numeric input, shared static balance, and the use of `double` for money.
+
+**Next:** Day 2 — introduce `BankAccount`, instance state, constructors, encapsulation, and business rules inside the account object.
+
+Progress and daily notes are tracked through commits and `docs/journal/`.
 
 ## Final Test
 
@@ -275,4 +286,4 @@ The challenge is complete when the code is not only working, but understandable.
 
 ## License
 
-This repository can use the MIT License so the challenge structure and example code can be reused by others.
+This repository uses the MIT License so the challenge structure and example code can be reused by others.
