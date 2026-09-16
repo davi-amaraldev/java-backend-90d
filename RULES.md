@@ -12,7 +12,9 @@ Every seventh day may be used for a lighter checkpoint, review, debugging sessio
 
 Missing one day does **not** restart the challenge.
 
-A missed day must be recorded honestly and its essential learning objective must be recovered later.
+If a day is missed, resume its essential learning objective without creating a separate record.
+
+Challenge day numbers are represented primarily by exercises in `labs/dayNN/`.
 
 ## 2. A video is not a deliverable
 
@@ -28,8 +30,7 @@ Examples:
 - a refactor;
 - SQL;
 - an API design;
-- a written technical explanation;
-- a checkpoint result.
+- a practical checkpoint exercise.
 
 ## 3. Understand before abstracting
 
@@ -142,6 +143,10 @@ Commits should reflect the actual learning timeline.
 
 Do not backdate commits to manufacture activity.
 
+Make as many commits as needed each day; there is no daily commit quota.
+
+Git is sufficient to record history and evolution. No journal, manual date or study-time log, daily written reflection, progress metrics, or recurring reports are required.
+
 Prefer meaningful messages such as:
 
 ```text
@@ -149,25 +154,17 @@ study: explore object references
 test: cover reservation capacity rule
 feat: add reservation creation use case
 refactor: separate payment policy
-docs: record week 3 checkpoint
 ```
 
-## 13. Every day starts with recall
+## 13. Review through practice
 
-Before opening notes, spend a few minutes answering:
-
-- What did I learn yesterday?
-- Can I reproduce the core idea?
-- Where did I struggle?
-- Where does it appear in the project?
-
-This is intentionally uncomfortable.
-
-That difficulty is part of learning.
+Revisit earlier concepts by solving exercises, debugging or refactoring code.
 
 ## 14. Every week ends with a checkpoint
 
 A checkpoint should mix subjects instead of announcing which concept is being tested.
+
+Checkpoints are practical exercises, with no separate report required.
 
 Examples:
 
@@ -206,7 +203,7 @@ Broken experiments belong in a branch or lab.
 
 ## 19. Explain engineering decisions
 
-For meaningful choices, prefer documenting the reason.
+Understand the reasons behind meaningful choices and be able to explain them when reviewing the code.
 
 Examples:
 

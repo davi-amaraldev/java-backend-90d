@@ -46,7 +46,7 @@ explain the decision
 
 Watching a lesson or reading documentation does not count as completing a day by itself.
 
-Every study day must produce evidence of learning: code, tests, notes, a design decision, or a meaningful refactor.
+Put learning into practice through code, exercises, tests, projects and refactoring.
 
 ## 90-Day Structure
 
@@ -97,11 +97,8 @@ No architecture pattern is adopted only because it is fashionable.
 ├── ROADMAP.md
 ├── RULES.md
 ├── RESOURCES.md
-├── JOURNAL_TEMPLATE.md
-├── docs/
-│   ├── journal/
-│   └── checkpoints/
 ├── labs/
+│   └── day01/
 └── project/
 ```
 
@@ -119,7 +116,7 @@ labs/
     └── src/
 ```
 
-Use `labs/dayNN/` for focused daily experiments. The example above shows Day 1 and the planned Day 2 layout. Create directories only when work begins; not every day needs a new lab.
+Use `labs/dayNN/` to identify the challenge day through its exercises. The example above shows Day 1 and the planned Day 2 layout. Create directories only when work begins; not every day needs a new lab.
 
 Labs exist to learn a concept. They are not portfolio projects.
 
@@ -129,39 +126,11 @@ The main backend application.
 
 Concepts learned in the labs should eventually be applied here when they make sense.
 
-### `docs/journal/`
+## Study Loop
 
-Daily learning records, named `day01.md`, `day02.md`, and so on.
+Study a concept, solve exercises, apply it to the project, test or refactor, and commit meaningful changes.
 
-A journal entry should explain:
-
-- what I studied;
-- what I implemented;
-- what confused me;
-- what failed;
-- what I changed after feedback;
-- what I can now explain without looking up the answer.
-
-### `docs/checkpoints/`
-
-Weekly engineering reviews and larger assessments.
-
-## Daily Study Loop
-
-Target session: around **2 hours and 20 minutes**. Actual study time is recorded in each journal entry.
-
-```text
-10 min  recall yesterday without notes
-25 min  learn one concept
-20 min  inspect or trace an example
-30 min  solve a focused exercise
-45 min  apply, test or refactor
-10 min  write the journal entry
-```
-
-Some project days may take longer.
-
-Every seventh day is intentionally lighter and focuses on review, retrieval practice, debugging, refactoring or a checkpoint.
+Git records the history and evolution of the work. Make as many commits as needed on any day. No daily journal, manual date or study-time log, written reflection, or progress metrics are required.
 
 ## Definition of Done
 
@@ -175,8 +144,7 @@ Typical evidence:
 - refactor;
 - SQL query;
 - API contract;
-- architectural decision;
-- written explanation.
+- architectural decision implemented in code.
 
 See [RULES.md](RULES.md) for the complete challenge rules.
 
@@ -245,25 +213,6 @@ It must not replace the reasoning step.
 If I cannot explain code that AI produced, that code does not count as learned.
 
 See [RULES.md](RULES.md).
-
-## Progress
-
-**Status:** Day 1 completed — Java fundamentals with BankApp.
-
-**Study date:** 2026-09-14  
-**Time spent:** 40 minutes  
-**JDK:** 17
-
-Day 1 covered class structure, `main`, `Scanner`, methods, parameters and return values, `static`, conditionals, `do...while`, validation, and basic exception handling.
-
-- [Day 1 source code](labs/day01/src/BankApp.java)
-- [Day 1 journal](docs/journal/day01.md)
-
-The introductory implementation is complete. Manual verification results have not yet been recorded. Known limitations include menu-only business validation, unhandled non-numeric input, shared static balance, and the use of `double` for money.
-
-**Next:** Day 2 — introduce `BankAccount`, instance state, constructors, encapsulation, and business rules inside the account object.
-
-Progress and daily notes are tracked through commits and `docs/journal/`.
 
 ## Final Test
 

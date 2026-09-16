@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BankApp{
+public class BankApp1 {
 
     private static double balance = 1000.0;
 
